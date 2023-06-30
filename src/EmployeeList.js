@@ -37,6 +37,7 @@ const EmployeeList = () => {
       <ul>
         {filteredEmployees.map((employee) => (
           <li key={employee.id}>
+            <p>{employee.id}</p>
             <img src={employee.avatar} alt={employee.first_name} />
             {employee.first_name}
           </li>
